@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Portfolio Tracker</title>
+</head>
+<body>
+    <h1>📊 Wallet Dashboard</h1>
+    
+    {% if data %}
+        <ul>
+        {% for token in data %}
+            <li><strong>{{ token.token }}</strong>: {{ token.balance }} ({{ token.usd_value }} USD)</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No data found.</p>
+    {% endif %}
+</body>
+</html>
