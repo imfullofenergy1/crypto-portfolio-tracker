@@ -21,7 +21,7 @@ def get_wallet_data():
 
     # Prices from CoinGecko
     prices = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=ethereum,hex&vs_currencies=usd").json()
-    eth_price = prices['ethereum']['usd']
+    eth_price = prices.get('ethereum', {}).get('usd', 'N/A')
     hex_price = prices['hex']['usd']
 
     return [
