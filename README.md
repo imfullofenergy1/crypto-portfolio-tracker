@@ -1,6 +1,9 @@
 # 🧠 Crypto Portfolio Tracker
 
 A Flask web app that tracks your real-time crypto wallet balances (ETH + tokens) using the Etherscan API, and displays the data in a clean, responsive dashboard.
+## 🔗 Live Demo
+
+👉 [Check out the deployed app on Render](https://crypto-portfolio-tracker-1-uy2.onrender.com)
 
 ## ✅ Features
 - Connects to your MetaMask or Trust Wallet address
